@@ -1,0 +1,17 @@
+<font face="Comic sans MS" size="30" color="blue"><h1>MY HOME PAGE!</h1></font>
+<h2>Users</h2>
+<% @users.each do |user| %>
+	<p><%= user.username %>, 
+	<%= user.email %>, 
+	<%= user.age %></p>
+<% end %>
+<h2>Cats</h2>
+<% @cats.each do |cat| %>
+	<p><%= cat.name %> says: 
+		<%= cat.meow%></p>
+<% end %>
+<h2>Todos</h2>
+<% @todos.each do |todo| %>
+	<p><%= todo.tasks %>, 
+	<%= todo.finished %></p>
+<% end %>
